@@ -23,35 +23,45 @@
 <body>
 
   <!-- Comment #1 -->
-  12
+  <div class ="interaction-count">12</div>
   <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
+  <div class ="user-name">amyrobson </div>
   <div class ="date-posted"> 1 month ago</div>
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+  <div class ="user-post">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
 
   <!-- Comment #2 -->
-  5
+  <div class ="interaction-count">5</div>
   <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
+  <div class ="user-name">maxblagun </div>
   <div class ="date-posted">2 weeks ago</div>
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+  <div class ="user-post">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</div>
 
   <!-- Comment #3 (Reply to comment #2) -->
-  4
+  <div class ="interaction-count">4</div>
   <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
+  <div class ="user-name">ramsesmiron </div>
   <div class ="date-posted">1 week ago</div>
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+  <div class ="user-post">@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</div>
 
   <!-- Comment #4 (Reply to comment #2) -->
-  2
+  <div class ="interaction-count">2</div>
   <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
+  <div class ="user-name">juliusomo </div>
   <div class ="date-posted">2 days ago</div>
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+  <!-- clarify if in there needs to be a class for replies and if there needs to be the user-name class within the replies-->
+  <div class ="user-post">@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</div>
+
+  <!--These are the original creation of the div class names just for reference-->
+
 <div class ="date-posted"></div>
 <div class ="user-name"></div>
 <div class ="user-post"></div>
+<div class ="interaction-count"></div>
+
+<!--user-reply will likely not be needed-->
+<div class ="user-reply"></div>
+<!--new-comment is what is seen at the bottom of the screen-->
+<div class ="new-comment"></div>
   
   <div class="attribution">
     Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
