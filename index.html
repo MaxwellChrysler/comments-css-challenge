@@ -1,115 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <div class="all-background"><!--change the background color -->
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <!-- Fonts from google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>CSS Challenge | Interactive comments section</title>
+    <!-- Fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 14px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>CSS Challenge | Interactive comments section</title>
 
-  <!-- Comment #1 -->
-<div class ="container">
-  <div class ="interaction-count">12</div>
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  <div class ="user-name">amyrobson </div>
-  <div class ="date-posted"> 1 month ago</div>
-  <div class ="user-post">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
-</div><!--Close out container-->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 14px;
+        text-align: center;
+      }
 
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  <!-- Comment #2 -->
-<div class ="container">
-  <div class ="interaction-count">5</div>
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  <div class ="user-name">maxblagun </div>
-  <div class ="date-posted">2 weeks ago</div>
-  <div class ="user-post">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</div>
-  <div class="vote-container">
-    <img alt="plus"   src="./images/icon-plus.svg"/>
-    <img alt="minus"  src="./images/icon-minus.svg"/>
-  </div> <!--end div class vote container-->
-</div><!--Close out container-->
-  <!-- Comment #3 (Reply to comment #2) -->
+  <body>
 
-<div class ="container">
-  <div class ="interaction-count">4</div>
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  <div class ="user-name">ramsesmiron </div>
-  <div class ="date-posted">1 week ago</div>
-  <div class ="user-reply">@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</div>
-</div><!--Close out container-->
-  
+    <!-- Comment #1 -->
+    <div class="container">
+
+      <img src="./images/avatars/image-amyrobson.png" alt="profile" />
+      <div class="user-name">amyrobson </div>
+      <div class="date-posted"> 1 month ago</div>
+      <div class="user-post">Impressive! Though it seems the drag feature could be improved. But overall it looks
+        incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
+      <div class="vote-container">
+        <img alt="plus" class="vote-up-button" src="./images/icon-plus.svg" />
+        <div class="interaction-count">12</div>
+        <img alt="minus" class="vote-down-button" src="./images/icon-minus.svg" />
+      </div><!--Close out container-->
 
 
-<!-- Comment #4 (Reply to comment #2) -->
-  <!--This is supposed to be your post so you have access to edit and deleting that post-->
+      <!-- Comment #2 -->
+      <div class="container">
 
-<div class ="container">
- 
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  <div class ="user-name">juliusomo </div>
-  <div class ="date-posted">2 days ago</div>
-  <!-- clarify if in there needs to be a class for replies and if there needs to be the user-name class within the replies-->
-  <div class ="user-reply">@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</div>
- 
- <!-- buttons needed just for the account owners post-->
-  <img alt="Delete" src="./images/icon-delete.svg" />
-  <img alt="edit" src="./images/icon-edit.svg" />
+        <img src="./images/avatars/image-maxblagun.png" alt="profile" />
+        <div class="user-name">maxblagun </div>
+        <div class="date-posted">2 weeks ago</div>
+        <div class="user-post">Woah, your project looks awesome! How long have you been coding for? I'm still new, but
+          think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React?
+          Thanks!</div>
+        <div class="vote-container">
+          <img alt="plus" class="vote-up-button" src="./images/icon-plus.svg" />
+          <div class="interaction-count">5</div>
+          <img alt="minus" class="vote-down-button" src="./images/icon-minus.svg" />
+        </div> <!--end div class vote container-->
+      </div><!--Close out container-->
+      <!-- Comment #3 (Reply to comment #2) -->
 
-  <div class="vote-container">
-    <img alt="plus" class="center"    src="./images/icon-plus.svg"/>
-    <div class ="interaction-count">2</div>
-    <img alt="minus" class="center"    src="./images/icon-minus.svg"/>
-  </div> <!--end div class vote container-->
+      <div class="container">
 
-</div><!--Close out container-->
- 
-<!--Add new comment container-->
+        <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+        <div class="user-name">ramsesmiron </div>
+        <div class="date-posted">1 week ago</div>
+        <div class="user-reply">@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS,
+          and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</div>
+
+        <div class="vote-container">
+          <img alt="plus" class="vote-up-button" src="./images/icon-plus.svg" />
+          <div class="interaction-count">4</div>
+          <img alt="minus" class="vote-down-button" src="./images/icon-minus.svg" />
+        </div><!--Close out container-->
 
 
 
-  <!--These are the original creation of the div class names just for reference-->
+        <!-- Comment #4 (Reply to comment #2) -->
+        <!--This is supposed to be your post so you have access to edit and deleting that post-->
 
-<div class ="date-posted"></div>
+        <div class="container">
+
+          <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+          <div class="user-name">juliusomo </div>
+          <div class="date-posted">2 days ago</div>
+          <!-- clarify if in there needs to be a class for replies and if there needs to be the user-name class within the replies-->
+          <div class="user-reply">@ramsesmiron I couldn't agree more with this. Everything moves so fast and it always
+            seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</div>
+
+          <!-- buttons needed just for the account owners post-->
+          <img alt="Delete" src="./images/icon-delete.svg" />
+          <img alt="edit" src="./images/icon-edit.svg" />
+
+          <div class="vote-container">
+            <img alt="plus" class="vote-up-button" src="./images/icon-plus.svg" />
+            <div class="interaction-count">2</div>
+            <img alt="minus" class="vote-down-button" src="./images/icon-minus.svg" />
+          </div> <!--end div class vote container-->
+
+        </div><!--Close out container-->
+
+        <!--Add new comment container-->
+
+
+
+        <!--These are the original creation of the div class names just for reference-->
+
+        <!-- <div class ="date-posted"></div>
 <div class ="user-name"></div>
 <div class ="user-post"></div>
 <div class ="interaction-count"></div>
 <div class = "your-post"></div>
 <div class ="container"></div>
-<div class ="vote-container"></div>
+<div class ="vote-container"></div> -->
 
-<!--container is what will hold each comment -->
-<div class ="container"></div>
+        <!-- I think I need to create a new class for putting the plus on top minus on bottom and interaction-count in the middle-->
+        <!-- <div class="vote-up-button"></div>
+<div class="vote-down-button"></div> -->
+        <!--container is what will hold each comment -->
+        <!-- <div class ="container"></div> -->
 
-<!--user-reply will likely not be needed--> 
-<div class ="user-reply"></div>
-<!--new-comment is what is seen at the bottom of the screen-->
-<div class ="new-comment"></div>
-  
+        <!--user-reply will likely not be needed-->
+        <!-- <div class ="user-reply"></div> -->
+        <!--new-comment is what is seen at the bottom of the screen-->
+        <!-- <div class ="new-comment"></div> -->
 
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Maxwell Chrysler</a>.
-  </div>
-</body>
+
+        <div class="attribution">
+          Challenge adapted from <a
+            href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9"
+            target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Maxwell Chrysler</a>.
+        </div>
+  </body>
 </div> <!-- end div all-background -->
+
 </html>
 
 <!-- Each container will contain at least 
