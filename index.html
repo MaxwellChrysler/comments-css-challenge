@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<div class="all-background"><!--change the background color -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -40,6 +41,10 @@
   <div class ="user-name">maxblagun </div>
   <div class ="date-posted">2 weeks ago</div>
   <div class ="user-post">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</div>
+  <div class="vote-container">
+    <img alt="plus"   src="./images/icon-plus.svg"/>
+    <img alt="minus"  src="./images/icon-minus.svg"/>
+  </div> <!--end div class vote container-->
 </div><!--Close out container-->
   <!-- Comment #3 (Reply to comment #2) -->
 
@@ -57,7 +62,7 @@
   <!--This is supposed to be your post so you have access to edit and deleting that post-->
 
 <div class ="container">
-  <div class ="interaction-count">2</div>
+ 
   <img src="./images/avatars/image-juliusomo.png" alt="profile" />
   <div class ="user-name">juliusomo </div>
   <div class ="date-posted">2 days ago</div>
@@ -67,6 +72,12 @@
  <!-- buttons needed just for the account owners post-->
   <img alt="Delete" src="./images/icon-delete.svg" />
   <img alt="edit" src="./images/icon-edit.svg" />
+
+  <div class="vote-container">
+    <img alt="plus" class="center"    src="./images/icon-plus.svg"/>
+    <div class ="interaction-count">2</div>
+    <img alt="minus" class="center"    src="./images/icon-minus.svg"/>
+  </div> <!--end div class vote container-->
 
 </div><!--Close out container-->
  
@@ -82,11 +93,12 @@
 <div class ="interaction-count"></div>
 <div class = "your-post"></div>
 <div class ="container"></div>
+<div class ="vote-container"></div>
 
 <!--container is what will hold each comment -->
 <div class ="container"></div>
 
-<!--user-reply will likely not be needed-->
+<!--user-reply will likely not be needed--> 
 <div class ="user-reply"></div>
 <!--new-comment is what is seen at the bottom of the screen-->
 <div class ="new-comment"></div>
@@ -97,6 +109,7 @@
     Coded by <a href="#">Maxwell Chrysler</a>.
   </div>
 </body>
+</div> <!-- end div all-background -->
 </html>
 
 <!-- Each container will contain at least 
